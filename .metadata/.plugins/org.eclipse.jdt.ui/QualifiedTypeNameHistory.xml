@@ -28,4 +28,8 @@
     <fullyQualifiedTypeName name="com.promineotech.jeep.entity.Jeep"/>
     <fullyQualifiedTypeName name="com.promineotech.jeep.entity.JeepModel"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.apache.juli.logging.Log"/>
+    <fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
+    <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>
