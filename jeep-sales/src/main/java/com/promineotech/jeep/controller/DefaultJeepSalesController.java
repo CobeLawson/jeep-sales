@@ -22,7 +22,5 @@ public class DefaultJeepSalesController implements JeepSalesController {
 	public List<Jeep> fetchJeeps(JeepModel model, String trim) {
 		log.info("model={}, trim={}", model, trim);
 		 return jeepSalesService.fetchJeeps(model, trim);
-		// return null;
 	}
-
 }

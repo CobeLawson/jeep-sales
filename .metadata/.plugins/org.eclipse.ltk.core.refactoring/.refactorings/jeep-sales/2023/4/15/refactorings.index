@@ -1,2 +1,4 @@
 1681004520136	Copy file
 1681004572534	Rename resource 'application.yaml'
+1681267465256	Extract method 'assertErrorMessageValid'
+1681269324881	Extract constant 'TRIM_MAX_LENGTH'
