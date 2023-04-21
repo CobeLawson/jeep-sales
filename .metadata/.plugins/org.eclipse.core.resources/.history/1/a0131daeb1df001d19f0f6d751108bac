@@ -1,0 +1,70 @@
+package com.promineotech.jeep.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.jdbc.Sql;
+import org.springframework.test.context.jdbc.SqlConfig;
+
+import com.promineotech.jeep.entity.JeepModel;
+import com.promineotech.jeep.entity.Order;
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@ActiveProfiles("test")
+@Sql(scripts = {
+	    "classpath:flyway/migrations/V1.0__Jeep_Schema.sql",
+	    "classpath:flyway/migrations/V1.1__Jeep_Data.sql"}, 
+	    config = @SqlConfig(encoding = "utf-8"))
+class CreateOrderTest {
+	@Autowired
+	private TestRestTemplate restTemplate;
+	
+	@LocalServerPort
+	private int serverPort;
+
+	@Test
+	void testCreateOrderReturnsSuccess201() {
+		// Given: an order as JSON
+		String body = createOrderBody();
+    	String uri = String.format("http://localhost:%d/orders", serverPort);
+		
+		// When: the order is sent
+		ResponseEntity<Order> = getRestTemplate.exchange();
+		
+		// Then: a 201 status is returned
+		
+		
+		// And: the returned order is correct
+		
+		
+	}
+
+	protected String createOrderBody() {
+		// @formatter:off
+		return "{\r\n"
+			+ "  \"customer\":\"MAYNARD_TORBJORG\",\r\n"
+			+ "  \"model\":\"GLADIATOR\",\r\n"
+			+ "  \"trim\":\"Mojave\",\r\n"
+			+ "  \"doors\":4,\r\n"
+			+ "  \"color\":\"EXT_SARGE_GREEN\",\r\n"
+			+ "  \"engine\":\"3_6_HYBRID\",\r\n"
+			+ "  \"tire\":\"35_NITTO\",\r\n"
+			+ "  \"options\":[\r\n"
+			+ "    \"DOOR_MOPAR_REINFORCE\",\r\n"
+			+ "    \"EXT_MOPAR_HEAD_LED\",\r\n"
+			+ "    \"EXT_WARN_WINCH\",\r\n"
+			+ "    \"EXT_MOPAR_CAMERA\",\r\n"
+			+ "    \"EXT_QUAD_RACK\",\r\n"
+			+ "    \"WHEEL_MOPAR_SPARE\"\r\n"
+			+ "  ]\r\n"
+			+ "}";
+		// @formatter:on
+	}
+}

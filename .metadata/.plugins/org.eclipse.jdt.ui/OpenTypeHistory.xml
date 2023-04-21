@@ -3,4 +3,7 @@
     <typeInfo handle="=jeep-sales/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.promineotech.jeep.controller{JeepSalesController.java[JeepSalesController" modifiers="513" timestamp="1681269528958"/>
     <typeInfo handle="=jeep-sales/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.promineotech.jeep.service{JeepSalesService.java[JeepSalesService" modifiers="513" timestamp="1681010343994"/>
     <typeInfo handle="=jeep-sales/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.promineotech.jeep.dao{JeepSalesDao.java[JeepSalesDao" modifiers="513" timestamp="1681166968578"/>
+    <typeInfo handle="=jeep-sales/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.promineotech.jeep.controller{JeepOrderController.java[JeepOrderController" modifiers="513" timestamp="1682020923305"/>
+    <typeInfo handle="=jeep-sales/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.promineotech.jeep.service{JeepOrderService.java[JeepOrderService" modifiers="513" timestamp="1682021617355"/>
+    <typeInfo handle="=jeep-sales/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.promineotech.jeep.dao{JeepOrderDao.java[JeepOrderDao" modifiers="513" timestamp="1682023877661"/>
 </typeInfoHistroy>

@@ -34,7 +34,6 @@ INDEX VERSION 1.132+C:\Users\Cobe\Desktop\BootCamp\jeep-sales\.metadata\.plugins
 3943959071.index
 199844560.index
 3350784435.index
-2883600664.index
 581219535.index
 97768616.index
 2818314082.index
